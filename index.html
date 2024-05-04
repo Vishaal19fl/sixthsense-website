@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>EyeTalk</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <script src="https://kit.fontawesome.com/ab4b426d38.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="img/logo1.jpg" rel="icon" style="width: max-content;" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="text-white">Sixth<span class="text-dark"></span> Sense</h1>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler ms-auto me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="#" class="nav-item nav-link active">HOME</a>
+              <a href="#about" class="nav-item nav-link">ABOUT</a>
+              <a href="#features" class="nav-item nav-link">FEATURES</a>
+              <a href="#ai" class="nav-item nav-link">GOOGLE</a>
+              <a href="#product" class="nav-item nav-link">PRODUCT</a>
+              <a href="#team" class="nav-item nav-link">TEAM</a>
+              <a href="#contact" class="nav-item nav-link">CONTACT</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5" id="home">
+      <div class="container pt-5">
+        <div class="row g-5 pt-5">
+          <div
+            class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5"
+          >
+            <div
+              class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight"
+            >
+              A GDSC Solution
+            </div>
+            <h1 class="display-4 text-white mb-4 animated slideInRight">
+              Empowering the Visually Impaired 
+            </h1>
+            <p class="text-white mb-4 animated slideInRight">
+              Discover a new way to navigate the world with our innovative technology. Using AI and machine learning, our project offers enhanced communication, navigation, and accessibility for visually impaired individuals. Experience a transformative approach to everyday tasks and enjoy greater independence.
+            </p>
+            <a
+              href="/pages/features1.html"
+              class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight"
+              >View Features</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
+              >Get in Touch</a
+            >
+          </div>
+          <div class="col-lg-6 align-self-end text-center text-lg-end">
+            <img class="img-fluid" src="img/logopng.png" alt="Our Hardware Device" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(20, 24, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn btn-square bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-light p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-light px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- About Start -->
+<div class="container-fluid py-5" id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="about-img">
+          <img class="img-fluid" src="./img/model1.jpg" alt="Our Hardware Device" />
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+          About Our Project
+        </div>
+        <h1 class="mb-4">Empowering the Visually Impaired with AI</h1>
+        <p class="mb-4">
+          Our project brings the latest AI and machine learning technologies together to assist visually impaired individuals. With a combination of hardware and software, our device offers advanced features for safer navigation, enhanced communication, and improved accessibility.
+        </p>
+        <p class="mb-4">
+          The device uses a Coral TPU, Raspberry Pi, GPS, and a camera to detect objects, recognize faces, and estimate distances. Speech-to-text and text-to-speech capabilities allow for easy interaction, while gesture-based controls provide a seamless user experience. Whether it's navigating the streets, identifying people, or managing daily tasks, our project is designed to empower users with greater independence.
+        </p>
+
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <h6 class="mb-3">
+              <i class="fa fa-check text-primary me-2"></i>Machine Learning Powered
+            </h6>
+            <h6 class="mb-0">
+              <i class="fa fa-check text-primary me-2"></i>Accessible Design
+            </h6>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="mb-3">
+              <i class="fa fa-check text-primary me-2"></i>Comprehensive Features
+            </h6>
+            <h6 class="mb-0">
+              <i class="fa fa-check text-primary me-2"></i>Innovative Solutions
+            </h6>
+          </div>
+        </div>
+        <!-- Social media links and other buttons can be added here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5" id="features">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+              Our Solutions
+            </div>
+            <h1 class="mb-4">Revolutionizing Accessibility with Machine Learning</h1>
+<p class="mb-4">
+  Discover a new world of accessibility through our AI-driven technology. This project seamlessly integrates machine learning to empower visually impaired individuals, offering innovative solutions for enhanced navigation, safety, and communication. Experience a transformative approach to everyday tasks with features designed to improve independence and efficiency.
+</p>
+            <a class="btn btn-primary rounded-pill px-4" href="./pages/features1.html">View All</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div
+                      class="service-item d-flex flex-column justify-content-center text-center rounded"
+                    >
+                      <div class="service-icon btn-square">
+                        <i class="fa-solid fa-robot fa-2x"></i>
+                      </div>
+                      <h5 class="mb-3">Gemini And Gemma </h5>
+                      <p>
+                        Our project integrates two powerful models, Gemini and Gemma, to provide assistance to visually impaired individuals. When online connectivity is available, Gemini is initiated to answer questions and provide information effectively. However, in situations where online connectivity is not established, Gemma seamlessly takes over to ensure uninterrupted assistance.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div
+                      class="service-item d-flex flex-column justify-content-center text-center rounded"
+                    >
+                      <div class="service-icon btn-square" >
+                        <i class="fa-solid fa-face-smile fa-2x"></i>
+                      </div>
+                      <h5 class="mb-3">Emotion Detection balance</h5>
+                      <p>
+                        In this system, we integrate emotion detection technology with facial recognition to assist visually impaired individuals in perceiving the emotions of people around them. When a known person stands in front of a blind individual, our system utilizes a camera feed to recognize their facial expressions. This recognition process is initiated only when the system identifies a familiar face. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-md-4">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div
+                      class="service-item d-flex flex-column justify-content-center text-center rounded"
+                    >
+                      <div class="service-icon btn-square">
+                        <i class="fa-solid fa-microphone fa-2x"></i>
+                      </div>
+                      <h5 class="mb-3">Speech To Text</h5>
+                      <p>
+                        We have built a speech-to-text system tailored for individuals with visual impairments. Our system seamlessly integrates with <span style="font-weight: 600;">Google's</span> powerful speech recognition technology, allowing users to convert spoken words into text format. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                    <div
+                      class="service-item d-flex flex-column justify-content-center text-center rounded"
+                    >
+                      <div class="service-icon btn-square">
+                        <i class="fa-solid fa-calendar fa-2x"></i>
+                      </div>
+                      <h5 class="mb-3">Voice-Enabled Calendar Management</h5>
+                      <p>
+                        We have integrated <span style="font-weight: 600;">Google Calendar API</span> in our Sixth Sense to provide vital resources for visually impaired individuals, enabling them to manage schedules and tasks effortlessly through voice commands. With the ability to create events on specific days and inquire about their schedule for any given day, users gain instant access to crucial information, enhancing their organization and time management skills.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5" id="ai">
+      <div class="container pt-5">
+        <div class="row g-5">
+          <div
+            class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">
+              Google Services
+            </div>
+            <h1 class="text-white mb-4">
+              Google Services in Sixth Sense
+            </h1>
+            <p class="text-light mb-4">
+              Our innovative approach leverages Google services to create a seamless experience for visually impaired users. By integrating Google Calendar for event management, Google Maps for navigation, and Google Assistant for voice interaction, we provide a dynamic and personalized user experience. This combination ensures users can access essential services with ease and confidence, all powered by Google's robust technology suite.
+            </p>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Gemini and Gemma</span>
+            </div>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Google Calendar</span>
+            </div>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Firebase</span>
+            </div>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Google TTS</span>
+            </div>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Tensorflow Lite</span>
+            </div>
+            <div class="d-flex align-items-center text-white mb-3">
+              <div
+                class="btn-sm-square bg-white text-primary rounded-circle me-3"
+              >
+                <i class="fa fa-check"></i>
+              </div>
+              <span>Google Maps</span>
+            </div>
+            <div class="row g-4 pt-3">
+              
+              
+            </div>
+          </div>
+          <div
+            class="col-lg-6 align-self-end text-center text-md-end wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <img
+              width="220%"
+              style="margin-bottom: 50px"
+              class="img-fluid floating-img"
+              src="https://static.vecteezy.com/system/resources/previews/009/428/333/original/3d-social-media-icons-google-free-png.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature End -->
+    <!-- Service Start -->
+    <div class="container-fluid bg-light py-5" id="features">
+      <div class="container py-5" >
+        <h1 class="mb-4">Architecture</h1>
+        <img src="./img/newArchi.png" alt="" style="width: 1400px;">
+      </div>  
+    </div>
+    <!-- Service End -->
+
+    <!-- Testimonial Start -->
+    <div
+      class="container-xxl py-4 product"
+      style="display: flex; justify-content: center; align-items: center"
+      id="product"
+    >
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+              PRODUCT
+            </div>
+            <div
+              class="col-lg-9 wow fadeIn items"
+              data-wow-delay="0.5s"
+              style="display: flex; flex-direction: row; gap: 15px"
+            >
+              <div class="col-12 wow fadeIn product-item" data-wow-delay="0.5s">
+                <div class="team-item bg-white text-center rounded p-4 pt-0">
+                  <img
+                    class="img-fluid rounded p-4"
+                    src="./img/model1.jpg"
+                    alt=""
+                    style="border-radius: 10px !important"
+                  />
+
+                  <h5 class="mb-0">Hardware & Software</h5>
+                </div>
+              </div>
+            </div>
+            <br />
+            <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+          </div>
+          <div
+            class="col-lg-7 wow fadeIn"
+            data-wow-delay="0.5s"
+            style="display: flex; align-items: center"
+          >
+            <div
+              class="owl-carousel testimonial-carousel border-start border-primary"
+            >
+              <div class="testimonial-item ps-5">
+                <p class="fs-4">
+                  EyeTalk's hardware consists of a discreet glass unit with an integrated infrared (IR) camera for precise iris tracking and built-in speakers. This compact and ergonomic design seamlessly integrates with the software, enabling effortless communication through intuitive gaze navigation. The IR camera accurately captures subtle eye movements, translating them into commands within the interface, while the built-in speakers provide clear audio feedback.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="ps-3">
+                    <h5 class="mb-1">Hardware</h5>
+                    <span>Glass Unit</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item ps-5">
+                <p class="fs-4">
+                  EyeTalk's software is a game-changer in assistive communication. With advanced iris tracking, it enables effortless communication for ALS patients and those with paralysis. Beyond essential communication, EyeTalk offers entertainment options, emergency features, and smart home controls. Users can enjoy media, contact caregivers or emergency services, and manage their environment—all with intuitive eye movements. 
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="ps-3">
+                    <h5 class="mb-1">Software</h5>
+                    <span>Iris Controlled App</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5" id="team">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+              Our Development Team
+            </div>
+            <h1 class="mb-4">Meet Our Talented Developers</h1>
+            <p class="mb-4">
+              Meet the talented team behind our innovative project designed to assist visually impaired individuals. Our experts are committed to developing advanced AI-based solutions that enhance navigation, communication, and safety for those with visual impairments.
+            </p>
+            <p class="mb-4">
+              Our team combines software and hardware expertise to create a device that seamlessly integrates machine learning, object detection, and voice recognition. We work tirelessly to ensure our product is intuitive and accessible, empowering visually impaired users to interact with the world with confidence and independence.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/danny1.png"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Hursun S S</h5>
+                      <small>Full stack and Iot Developer</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href="https://www.linkedin.com/in/vishaal-k-783894202/"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/danny1.png"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Daniel Das K
+                      </h5>
+                      <small>ML Developer</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-md-4">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/danny1.png"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Aswin J D</h5>
+                      <small>ML Developer</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                    <div
+                      class="team-item bg-white text-center rounded p-4 pt-0"
+                    >
+                      <img
+                        class="img-fluid rounded-circle p-4"
+                        src="img/danny1.png"
+                        alt=""
+                      />
+                      <h5 class="mb-0">Kishore V G</h5>
+                      <small>IoT Developer</small>
+                      <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary m-1" href=""
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div
+            class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <img class="img-fluid" src="img/newsletter.png" alt="" />
+          </div>
+          <div
+            class="col-md-7 py-5 newsletter-text wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            
+            <h1 class="text-white mb-4">Contact us to buy our product today!</h1>
+            <div class="position-relative w-100 mt-3 mb-2">
+             
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+      <div class="container py-5">
+          <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+              <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
+              <h1 class="mb-4">Fill these details and we will get back to you.</h1>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-lg-7">
+                 
+                  <div class="wow fadeIn" data-wow-delay="0.3s">
+                      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdkwD6-_2FY_C_iUp7LfK8BDUgLngrquBGjhKJCxig_mVxkeA/formResponse"
+                      method="POST"
+                      name="google-forms"
+                      id="sheetdb-form"
+                      onsubmit="return validateForm();">
+                          <div class="row g-3">
+                              <div class="col-md-6">
+                                  <div class="form-floating">
+                                      <input type="text" class="form-control" id="name" placeholder="Your Name" name="entry.2005620554">
+                                      <label for="name">Your Name</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-floating">
+                                      <input type="email" class="form-control" id="email" placeholder="Your Email" name="emailAddress">
+                                      <label for="email">Your Email</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="form-floating">
+                                      <input type="text" class="form-control" id="subject" placeholder="Subject" name="entry.1065046570">
+                                      <label for="subject">Whatsapp Number</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="form-floating">
+                                      <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" name="entry.1166974658"></textarea>
+                                      <label for="message">Message</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <button class="btn btn-primary w-100 py-3" onclick="return validateForm();" type="submit"">Submit</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Contact End -->
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div
+          class="mx-auto text-center wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+            Case Study
+          </div>
+          <h1 class="mb-4">Case Studies about Vision Impaired People</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img class="img-fluid" src="img/blind1.jpg" alt="" />
+              <a class="case-overlay text-decoration-none" href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment">
+                <small>Vision Impaired People</small>
+                <h5 class="lh-base text-white mb-3">
+                  Blindness and vision impairment
+                </h5>
+                <span class="btn btn-square btn-primary"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img class="img-fluid" src="img/blind2.jpg" alt="" />
+              <a class="case-overlay text-decoration-none" href="https://ophthalmology.pitt.edu/vision-impairment/what-vision-impairment">
+                <small>Vision Impaired People</small>
+                <h5 class="lh-base text-white mb-3">
+                  What is Vision Impairment?
+                </h5>
+                <span class="btn btn-square btn-primary"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+            <div
+              class="case-item position-relative overflow-hidden rounded mb-2"
+            >
+              <img class="img-fluid" src="img/blind3.jpg" alt="" />
+              <a class="case-overlay text-decoration-none" href="https://link.springer.com/book/10.1007/978-1-84628-867-8">
+                <small>Vision Impaired People</small>
+                <h5 class="lh-base text-white mb-3">
+                  Assistive Technology for Visually Impaired and Blind People
+                </h5>
+                <span class="btn btn-square btn-primary"
+                  ><i class="fa fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Case End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="d-inline-block mb-3">
+              <h1 class="text-white">
+                Sixth <span >Sense</span>
+              </h1>
+            </a>
+            
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+            <h5 class="text-white mb-4">Get In Touch</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Chennai
+            </p>
+            
+            <p style="font-size: small;"><i class="fa fa-envelope me-3"></i>unfazedofficial@gmail.com</p>
+            <div class="d-flex pt-2">
+              
+              <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/vishaal-k-783894202/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="#about">About Us</a>
+            <a class="btn btn-link" href="#contact">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="#home">Home</a>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <h5 class="text-white mb-4">Our Products</h5>
+            <a class="btn btn-link" href="#product">Sixth Sense - Hardware + Software</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">EyeTalk</a>, All
+              Right Reserved.
+
+             
+              
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact">Help</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
